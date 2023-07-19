@@ -20,7 +20,7 @@
       };
       overlays = {
         hoon-language-server = final: prev: {
-          inherit (self.packages) hoon-language-server;
+          final.hoon-language-server = self.packages.hoon-language-server;
         };
       };
     };
