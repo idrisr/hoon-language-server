@@ -20,7 +20,7 @@
       };
       overlays = {
         hoon-language-server = final: prev: {
-          final.hoon-language-server = self.packages.hoon-language-server;
+          hoon-language-server = prev.callPackage ./. { };
         };
       };
     };
