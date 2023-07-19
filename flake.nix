@@ -18,7 +18,7 @@
             self.packages.${system}.hoon-language-server
           }/bin/hoon-language-server";
       };
-      overays = {
+      overlays = {
         hoon-language-server = final: prev: {
           inherit (self.packages) hoon-language-server;
         };
